@@ -3,7 +3,7 @@
 
 
 function scrollToTop() {
-    window.scrollTo({top: 0, behavior:'smooth'});
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 
@@ -13,43 +13,60 @@ function scrollToTop() {
 const menuBtn = document.getElementById("hemburger");
 const navMenu = document.getElementById("mobile-menu");
 
-menuBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("hidden");
-});
+
+if (menuBtn && navMenu) {
+    menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+    });
+}
+
+
 
 const bottemBtn = document.getElementById("close-bottem");
 const cookibtn = document.getElementById("cookies-btn");
 const bottem = document.getElementById("fixed-bottem");
 
-bottemBtn.addEventListener("click", () => {
-    bottem.classList.add("hidden");
-});
+if (bottemBtn && bottem) {
+    bottemBtn.addEventListener("click", () => {
+        bottem.classList.add("hidden");
+    });
+}
 
-cookibtn.addEventListener("click", () => {
-    bottem.classList.add("hidden");
-});
 
-const messageBtn = document.getElementById("message-btn");
-const messageText = document.getElementById("message-text");
-
-messageBtn.addEventListener("click", () => {
-    messageText.classList.toggle("hidden");
-});
+if (cookibtn && bottem) {
+    cookibtn.addEventListener("click", () => {
+        bottem.classList.add("hidden");
+    });
+}
 
 
 const consultationBtn = document.getElementById("consultation-btn");
 const consultationForm = document.getElementById("consultation-form");
 const consultationClosebtn = document.getElementById("consultation-form-close");
 
-consultationBtn.addEventListener("click", () => {
-    consultationForm.classList.toggle("hidden");
-});
 
-consultationClosebtn.addEventListener("click", () => {
-    consultationForm.classList.toggle("hidden");
-})
+if (consultationBtn && consultationForm) {
+    consultationBtn.addEventListener("click", () => {
+        consultationForm.classList.toggle("hidden");
+    });
+}
 
-console.log(consultationBtn, consultationForm);
+
+if (consultationClosebtn && consultationForm) {
+    consultationClosebtn.addEventListener("click", () => {
+        consultationForm.classList.toggle("hidden");
+    })
+}
+
+
+const about_btn = document.getElementById("showAbout-btn");
+const about = document.getElementById("about");
+
+if(about_btn && about) {
+    about_btn.addEventListener("click", () => {
+        about.classList.toggle("hidden")
+    })
+}
 
 
 

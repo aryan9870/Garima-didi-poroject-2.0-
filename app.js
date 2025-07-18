@@ -62,11 +62,25 @@ if (consultationClosebtn && consultationForm) {
 const about_btn = document.getElementById("showAbout-btn");
 const about = document.getElementById("about");
 
-if(about_btn && about) {
+if (about_btn && about) {
     about_btn.addEventListener("click", () => {
         about.classList.toggle("hidden")
     })
 }
+
+
+// Navactive
+
+const links = document.querySelectorAll(".nav-link"); // sab nav links select karega
+const currentPage = window.location.pathname.split("/").pop(); // current file name jaise "about.html"
+
+links.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+        // agar link current page ka hai, to usme Tailwind ke color wale class daal do
+        link.classList.add("text-red-700", "underline");
+    }
+});
+
 
 
 

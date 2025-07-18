@@ -77,7 +77,7 @@ const currentPage = window.location.pathname.split("/").pop(); // current file n
 links.forEach(link => {
     if (link.getAttribute("href") === currentPage) {
         // agar link current page ka hai, to usme Tailwind ke color wale class daal do
-        link.classList.add("text-red-700", "underline");
+        link.classList.add("text-red-700",);
     }
 });
 

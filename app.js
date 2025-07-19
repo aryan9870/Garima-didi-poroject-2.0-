@@ -82,12 +82,22 @@ links.forEach(link => {
 });
 
 
-const nxtBtn = document.getElementById("nxtBtn");
-const cards = document.getElementById("cards");
+const nxtBtn1 = document.getElementById("nxtBtn1");
+const cards1 = document.getElementById("cards1");
 
-nxtBtn.addEventListener("click", () => {
-    cards.scrollBy({
-        left: 300,
+nxtBtn1.addEventListener("click", () => {
+    cards1.scrollBy({
+        left: 350,
+        behavior: "smooth",
+    });
+});
+
+const nxtBtn2 = document.getElementById("nxtBtn2");
+const cards2 = document.getElementById("cards2");
+
+nxtBtn2.addEventListener("click", () => {
+    cards2.scrollBy({
+        left: 350,
         behavior: "smooth",
     });
 });

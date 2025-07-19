@@ -82,5 +82,14 @@ links.forEach(link => {
 });
 
 
+const nxtBtn = document.getElementById("nxtBtn");
+const cards = document.getElementById("cards");
+
+nxtBtn.addEventListener("click", () => {
+    cards.scrollBy({
+        left: 300,
+        behavior: "smooth",
+    });
+});
 
 

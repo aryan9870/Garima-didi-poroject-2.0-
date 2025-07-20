@@ -125,6 +125,35 @@
                                 </div>
 
                                 <div>
+                                    <label for="your_name"
+                                        class="mb-2 block text-sm font-medium text-gray-900"> Streat or building
+                                    </label>
+                                    <input type="text" id="your_name"
+                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500"
+                                        placeholder="Bonnie Green" required />
+                                </div>
+
+                                <div>
+                                    <label for="your_name"
+                                        class="mb-2 block text-sm font-medium text-gray-900"> Near by landmark
+                                    </label>
+                                    <input type="text" id="your_name"
+                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500"
+                                        placeholder="Bonnie Green" required />
+                                </div>
+
+                                <div>
+                                    <label for="vat_number"
+                                        class="mb-2 block text-sm font-medium text-gray-900"> House number
+                                    </label>
+                                    <input type="text" id="vat_number"
+                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500"
+                                        placeholder="28" required />
+                                </div>
+
+
+                                
+                                <div>
                                     <label for="phone-input-3"
                                         class="mb-2 block text-sm font-medium text-gray-900"> Phone
                                         Number* </label>
@@ -389,31 +418,14 @@
                                     </div>
                                 </div>
 
-                                <div>
-                                    <label for="email"
-                                        class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Email
-                                    </label>
-                                    <input type="email" id="email"
-                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500"
-                                        placeholder="name@flowbite.com" required />
-                                </div>
-
-                                <div>
-                                    <label for="company_name"
-                                        class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Company
-                                        name </label>
-                                    <input type="text" id="company_name"
-                                        class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500"
-                                        placeholder="Flowbite LLC" required />
-                                </div>
-
+                                
                                 <div>
                                     <label for="vat_number"
-                                        class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> VAT number
+                                        class="mb-2 block text-sm font-medium text-gray-900"> PIN Code
                                     </label>
                                     <input type="text" id="vat_number"
                                         class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500"
-                                        placeholder="DE42313253" required />
+                                        placeholder="282007" required />
                                 </div>
 
                                 <div class="sm:col-span-2">
@@ -434,6 +446,36 @@
                             <h3 class="text-xl font-semibold text-gray-900">Payment</h3>
 
                             <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                                <div
+                                    class="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4">
+                                    <div class="flex items-start">
+                                        <div class="flex h-5 items-center">
+                                            <input id="credit-card" aria-describedby="credit-card-text" type="radio"
+                                                name="payment-method" value=""
+                                                class="h-4 w-4 border-gray-300 bg-white text-primary-600 focus:ring-2 focus:ring-primary-600"
+                                                checked />
+                                        </div>
+
+                                        <div class="ms-4 text-sm">
+                                            <label for="credit-card"
+                                                class="font-medium leading-none text-gray-900"> G Pay | Phone Pay
+                                                 </label>
+                                            <p id="credit-card-text"
+                                                class="mt-1 text-xs font-normal text-gray-500">Pay
+                                                with your UPI</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4 flex items-center gap-2">
+                                        <button type="button"
+                                            class="text-sm font-medium text-gray-500 hover:text-gray-900">Delete</button>
+
+                                        <div class="h-3 w-px shrink-0 bg-gray-200 dark:bg-gray-700"></div>
+
+                                        <button type="button"
+                                            class="text-sm font-medium text-gray-500 hover:text-gray-900">Edit</button>
+                                    </div>
+                                </div>
                                 <div
                                     class="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4">
                                     <div class="flex items-start">
@@ -495,35 +537,7 @@
                                     </div>
                                 </div>
 
-                                <div
-                                    class="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4">
-                                    <div class="flex items-start">
-                                        <div class="flex h-5 items-center">
-                                            <input id="paypal-2" aria-describedby="paypal-text" type="radio"
-                                                name="payment-method" value=""
-                                                class="h-4 w-4 border-gray-300 bg-white text-primary-600 focus:ring-2 focus:ring-primary-600" />
-                                        </div>
-
-                                        <div class="ms-4 text-sm">
-                                            <label for="paypal-2"
-                                                class="font-medium leading-none text-gray-900"> Paypal
-                                                account </label>
-                                            <p id="paypal-text"
-                                                class="mt-1 text-xs font-normal text-gray-500">
-                                                Connect to your account</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-4 flex items-center gap-2">
-                                        <button type="button"
-                                            class="text-sm font-medium text-gray-500 hover:text-gray-900">Delete</button>
-
-                                        <div class="h-3 w-px shrink-0 bg-gray-200 dark:bg-gray-700"></div>
-
-                                        <button type="button"
-                                            class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Edit</button>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
 

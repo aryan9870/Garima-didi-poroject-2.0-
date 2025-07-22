@@ -74,32 +74,29 @@ if (about_btn && about) {
 const links = document.querySelectorAll(".nav-link"); // sab nav links select karega
 const currentPage = window.location.pathname.split("/").pop(); // current file name jaise "about.html"
 
-links.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-        // agar link current page ka hai, to usme Tailwind ke color wale class daal do
-        link.classList.add("text-red-700",);
+if (links && currentPage) {
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            // agar link current page ka hai, to usme Tailwind ke color wale class daal do
+            link.classList.add("text-red-700",);
+        }
+    });
+}
+
+function increaseQty() {
+    let qtyInput = document.getElementById('quantity');
+    qtyInput.value = parseInt(qtyInput.value) + 1;
+}
+
+function decreaseQty() {
+    let qtyInput = document.getElementById('quantity');
+    if (parseInt(qtyInput.value) > 1) {
+        qtyInput.value = parseInt(qtyInput.value) - 1;
     }
-});
+}
 
 
-const nxtBtn1 = document.getElementById("nxtBtn1");
-const cards1 = document.getElementById("cards1");
 
-nxtBtn1.addEventListener("click", () => {
-    cards1.scrollBy({
-        left: 350,
-        behavior: "smooth",
-    });
-});
 
-const nxtBtn2 = document.getElementById("nxtBtn2");
-const cards2 = document.getElementById("cards2");
-
-nxtBtn2.addEventListener("click", () => {
-    cards2.scrollBy({
-        left: 350,
-        behavior: "smooth",
-    });
-});
 
 

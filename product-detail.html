@@ -25,6 +25,7 @@
             margin: 0;
         }
     </style>
+
 </head>
 
 <body>
@@ -129,19 +130,22 @@
             <div class="flex xl:justify-around justify-center xl:gap-0 gap-2">
                 <div>
                     <!-- minus button  -->
-                    <button type="button" class="bg-black text-white sm:px-4 px-3 py-2 rounded">-</button>
+                    <button onclick="decreaseQty()" type="button"
+                        class="bg-black text-white sm:px-4 px-3 py-2 rounded cursor-pointer">-</button>
                     <!-- value -->
                     <input type="number" value="1" min="1" id="quantity"
                         class="text-center border border-gray-300 rounded py-2 sm:px-4 px-3 sm:w-10 w-8 no-spinner">
                     <!-- plus button  -->
-                    <button type="button" class="bg-black text-white sm:px-4 px-3 py-2 rounded">+</button>
+                    <button onclick="increaseQty()" type="button" class="bg-black text-white sm:px-4 px-3 py-2 rounded cursor-pointer">+</button>
                 </div>
-                <button type="button" class="bg-black text-white uppercase py-2 xl:px-14 md:px-10 px-8 w-fit sm:tracking-widest">Add to
+                <button type="button"
+                    class="bg-black text-white uppercase py-2 xl:px-14 md:px-10 px-8 w-fit sm:tracking-widest cursor-pointer">Add to
                     cart</button>
             </div>
         </div>
     </div>
-    <div id="info" class="flex flex-col justify-center items-center gap-5 text-center py-10 xl:px-40 lg:px-30 md:px-20 sm:px-10 px-5  xl:py-20 md:p-10 p-5 tracking-wide text-lg text-gray-700">
+    <div id="info"
+        class="flex flex-col justify-center items-center gap-5 text-center py-10 xl:px-40 lg:px-30 md:px-20 sm:px-10 px-5  xl:py-20 md:p-10 p-5 tracking-wide text-lg text-gray-700">
         <p>A celebration of craft and contrast, Jaheim pairs ethically sourced bone inlay with luminous resin to
             striking effect. Its monochrome palette and intricate detailing bring quiet opulence to spaces. </p>
         <p>Customization available. For inquiries, contact our Concierge at +91 80030 11110 or write to us at
@@ -213,7 +217,7 @@
             <h3 class="uppercase tracking-wider text-xl font-semibold">Shipping Policy</h3>
             <div class="flex-col flex gap-2">
                 <h4 class="text-lg uppercase tracking-wider">Shipping cost</h4>
-                <ul class="flex flex-col gap-1 list-disc pl-5 text-gray-700" >
+                <ul class="flex flex-col gap-1 list-disc pl-5 text-gray-700">
                     <li>Shipping costs will be calculated at checkout.</li>
 
                 </ul>
